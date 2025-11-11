@@ -23,9 +23,11 @@ public class B17298 {
 
         Stack<Integer> stack = new Stack<>(); // 인덱스 저장용 스택
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++)
+        {
             // 현재 값이 스택의 top 인덱스가 가리키는 값보다 크면
-            while (!stack.isEmpty() && arr[stack.peek()] < arr[i]) {
+            while (!stack.isEmpty() && arr[stack.peek()] < arr[i])
+            {
                 int idx = stack.pop();   // 해당 인덱스 꺼내고
                 result[idx] = arr[i];    // 현재 값이 그 인덱스의 오큰수
             }
