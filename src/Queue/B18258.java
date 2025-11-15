@@ -4,7 +4,8 @@ import java.util.*;
 import java.io.*;
 
 public class B18258 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException 
+    {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
 
@@ -12,12 +13,14 @@ public class B18258 {
         Deque<Integer> queue = new ArrayDeque<>();
         int last = -1;  // 큐에 들어간 가장 최근 값
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) 
+        {
             String line = br.readLine();
             StringTokenizer st = new StringTokenizer(line);
             String cmd = st.nextToken();
 
-            switch (cmd) {
+            switch (cmd) 
+            {
                 case "push":
                     int x = Integer.parseInt(st.nextToken());
                     queue.addLast(x);
@@ -25,9 +28,11 @@ public class B18258 {
                     break;
 
                 case "pop":
-                    if (queue.isEmpty()) {
+                    if (queue.isEmpty()) 
+                    {
                         sb.append(-1).append('\n');
-                    } else {
+                    } else 
+                    {
                         sb.append(queue.removeFirst()).append('\n');
                     }
                     break;
@@ -41,17 +46,21 @@ public class B18258 {
                     break;
 
                 case "front":
-                    if (queue.isEmpty()) {
+                    if (queue.isEmpty()) 
+                    {
                         sb.append(-1).append('\n');
-                    } else {
+                    } else 
+                    {
                         sb.append(queue.peekFirst()).append('\n');
                     }
                     break;
 
                 case "back":
-                    if (queue.isEmpty()) {
+                    if (queue.isEmpty()) 
+                    {
                         sb.append(-1).append('\n');
-                    } else {
+                    } else 
+                    {
                         sb.append(last).append('\n');
                     }
                     break;
