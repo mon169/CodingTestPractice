@@ -3,7 +3,8 @@ package Queue;
 import java.util.*;
 import java.io.*;
 
-public class B10845 {
+public class B10845 
+{
 	public static void main(String[] args) throws IOException 
 	{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
